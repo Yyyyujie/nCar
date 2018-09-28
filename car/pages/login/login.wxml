@@ -1,0 +1,12 @@
+<view class="login_banner"></view>
+<view class='loginForm'>
+    <input placeholder='手机号码' type='number'></input>
+    <input placeholder='密码' password='password'></input>
+</view>
+<view class='loginBtn_Group'>
+  <button class='loginBtn'>登录</button>
+  <view class='togglegroup'>
+    <view class='forget'>忘记密码？</view>
+    <view class='reg'>注册账号</view>
+  </view>
+</view>

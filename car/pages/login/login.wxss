@@ -1,0 +1,32 @@
+/* pages/login/login.wxss */
+.login_banner{
+  width: 100%;
+  height: 350rpx;
+  background: green;
+}
+.loginForm{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+}
+.loginForm input{
+  border-bottom: 1rpx solid #f5f5f5;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.loginBtn{
+  background: green;
+  color: #fff;
+  margin-top: 30rpx;
+}
+.loginBtn_Group{
+  width: 80%;
+  margin: 0 auto;
+}
+.togglegroup{
+  display: flex;
+  justify-content: space-between;
+  font-size:28rpx;
+  margin-top: 20rpx;
+}
