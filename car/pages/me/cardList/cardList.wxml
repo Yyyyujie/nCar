@@ -1,0 +1,12 @@
+<!--pages/me/cardList/cardList.wxml-->
+<view class='cardBox'>
+    <view class='cardLi'>晋A66666</view>
+</view>
+<button class='addCard' bindtap='addCard'>添加车牌</button>
+<view class='mask'>
+  <view class='maskMain'>
+    <view class='maskTitle'>请输入车牌</view>
+    <input placeholder='车牌号码' class='maskInput'></input>
+    <button>添加</button>
+  </view>
+</view>

@@ -4,9 +4,9 @@
     <input placeholder='密码' password='password'></input>
 </view>
 <view class='loginBtn_Group'>
-  <button class='loginBtn'>登录</button>
+  <button class='loginBtn' bindtap='login'>登录</button>
   <view class='togglegroup'>
-    <view class='forget'>忘记密码？</view>
-    <view class='reg'>注册账号</view>
+    <view class='forget' data-page="../forget/forget" bindtap='reg'>忘记密码？</view>
+    <view class='reg' data-page="../reg/reg" bindtap='reg'>注册账号</view>
   </view>
 </view>

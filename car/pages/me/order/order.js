@@ -1,11 +1,16 @@
-// pages/login/login.js
+// pages/me/order/order.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      List:[
+        {
+          time:'2018-10-10',
+          contain:'快点挪走你的车车，人家要停车'
+        }
+      ]
   },
 
   /**
@@ -62,17 +67,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  //点击登录时间
-  login:function(){
-    wx.switchTab({
-      url: '../index/index',
-    })
-  },
-  //点击注册
-  reg:function(e){
-    wx.reLaunch({
-      url: e.currentTarget.dataset.page,
-    })
   }
 })

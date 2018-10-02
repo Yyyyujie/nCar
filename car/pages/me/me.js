@@ -1,11 +1,11 @@
-// pages/login/login.js
+// pages/me/me.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      mask:false
   },
 
   /**
@@ -63,16 +63,24 @@ Page({
   onShareAppMessage: function () {
 
   },
-  //点击登录时间
-  login:function(){
-    wx.switchTab({
-      url: '../index/index',
+  // 点击进入二级页面
+  opennewPage:function(e){
+      wx.navigateTo({
+        url: e.currentTarget.dataset.page
+      })
+  },
+  //点击说明书
+  intrduce:function(e){
+    this.setData({
+      mask: e.currentTarget.dataset.mask ? e.currentTarget.dataset.mask:false
     })
   },
-  //点击注册
-  reg:function(e){
-    wx.reLaunch({
-      url: e.currentTarget.dataset.page,
+  //修改头像
+  chengeHead:function(){
+    wx.chooseImage({
+      success: function(res) {
+        console.log(res)
+      }
     })
   }
 })

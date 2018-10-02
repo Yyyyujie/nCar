@@ -1,11 +1,21 @@
-// pages/login/login.js
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
 
+    ], 
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
+    
   },
 
   /**
@@ -62,17 +72,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  //点击登录时间
-  login:function(){
-    wx.switchTab({
-      url: '../index/index',
-    })
-  },
-  //点击注册
-  reg:function(e){
-    wx.reLaunch({
-      url: e.currentTarget.dataset.page,
-    })
   }
 })

@@ -1,4 +1,4 @@
-﻿{
+{
 	"description": "项目配置文件",
 	"packOptions": {
 		"ignore": []
@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
 	"appid": "wx6ff70ce35873f38e",
-	"projectname": "car",
+	"projectname": "ncar",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -27,13 +27,60 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的挪车码",
+					"pathName": "pages/ewm/ewm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "留言通知",
+					"pathName": "pages/eva/eva",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的资料",
+					"pathName": "pages/me/me",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/me/order/order",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/reg/reg",
+					"query": ""
+				}
+			]
 		}
 	}
 }

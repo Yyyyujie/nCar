@@ -1,14 +1,56 @@
-﻿{
+{
   "pages": [
     "pages/login/login",
     "pages/index/index",
-    "pages/logs/logs"
-    
+    "pages/ewm/ewm",
+    "pages/eva/eva",
+    "pages/me/me",
+    "pages/me/order/order",
+    "pages/me/cardList/cardList",
+    "pages/me/message/message",
+    "pages/reg/reg",
+    "pages/forget/forget"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "扫码挪车",
+        "color": "#959595",
+        "selectedColor": "#44D242",
+        "iconPath": "/images/sys.png",
+        "selectedIconPath": "/images/sys.png"
+      },
+      {
+        "pagePath": "pages/ewm/ewm",
+        "text": "我的挪车码",
+        "color": "#959595",
+        "selectedColor": "#44D242",
+        "iconPath": "/images/sys.png",
+        "selectedIconPath": "/images/sys.png"
+      },
+      {
+        "pagePath": "pages/eva/eva",
+        "text": "留言通知",
+        "color": "#959595",
+        "selectedColor": "#44D242",
+        "iconPath": "/images/sys.png",
+        "selectedIconPath": "/images/sys.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的资料",
+        "color": "#959595",
+        "selectedColor": "#44D242",
+        "iconPath": "/images/sys.png",
+        "selectedIconPath": "/images/sys.png"
+      }
+    ]
   }
 }

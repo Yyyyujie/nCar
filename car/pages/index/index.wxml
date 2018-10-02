@@ -1,0 +1,36 @@
+<view class="banner">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="banner" indicator-color='#D3D3D3' indicator-active-color="#44D242">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- <map></map> -->
+</view>
+<!-- 扫码挪车 -->
+<view class='ewm'>
+  <view class='ewmMain'>
+    <image src='/images/sys.png'></image>
+    <text>扫码挪车</text>
+  </view>
+</view>
+<view class='bh'>保护车主隐私 智能扫码挪车</view>
+<view class='three'>
+  <view class='three1'>
+    <image src='/images/sys.png'></image>
+    <view>隐私保护</view>
+    <view>匿名拨打电话 信息无泄漏</view>
+  </view>
+  <view class='three1'>
+    <image src='/images/sys.png'></image>
+    <view>隐私保护</view>
+    <view>匿名拨打电话 信息无泄漏</view>
+  </view>
+  <view class='three1'>
+    <image src='/images/sys.png'></image>
+    <view>隐私保护</view>
+    <view>匿名拨打电话 信息无泄漏</view>
+  </view>
+</view>

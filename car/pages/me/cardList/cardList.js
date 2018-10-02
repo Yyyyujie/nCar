@@ -1,4 +1,4 @@
-// pages/login/login.js
+// pages/me/cardList/cardList.js
 Page({
 
   /**
@@ -63,16 +63,8 @@ Page({
   onShareAppMessage: function () {
 
   },
-  //点击登录时间
-  login:function(){
-    wx.switchTab({
-      url: '../index/index',
-    })
-  },
-  //点击注册
-  reg:function(e){
-    wx.reLaunch({
-      url: e.currentTarget.dataset.page,
-    })
+  //点击添加车牌
+  addCard:function(){
+    
   }
 })

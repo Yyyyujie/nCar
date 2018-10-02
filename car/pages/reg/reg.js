@@ -1,4 +1,4 @@
-// pages/login/login.js
+// pages/reg/reg.js
 Page({
 
   /**
@@ -63,16 +63,10 @@ Page({
   onShareAppMessage: function () {
 
   },
-  //点击登录时间
-  login:function(){
-    wx.switchTab({
-      url: '../index/index',
-    })
-  },
   //点击注册
-  reg:function(e){
+  reg: function (e) {
     wx.reLaunch({
-      url: e.currentTarget.dataset.page,
+      url: e.currentTarget.dataset.page
     })
   }
 })

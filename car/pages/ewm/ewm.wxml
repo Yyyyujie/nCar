@@ -1,0 +1,9 @@
+<view class="ewm-title">您可自行将挪车码贴于车内，也可以购买我们制定挪车码</view>
+<view class='ewmBox'>
+    <view class='ewm1'>临时停靠 扫码即到</view>
+    <image src='/images/ewm.jpeg'></image>
+    <view class='ewm2'>微信扫码挪车</view>
+    <view class='ewm3'>[我的小程序]小程序 微信扫码联系车主 保护隐私</view>
+</view>
+<button class='buy'>购买专属挪车码贴</button>
+<button class='share'>分享我的挪车码</button>

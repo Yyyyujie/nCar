@@ -1,11 +1,27 @@
-// pages/login/login.js
+// pages/eva/eva.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      tabList:[
+        {
+          name:'发出留言',
+          index:0
+        },{
+          name:'收到留言',
+          index:1
+        }
+      ],
+      tabSelect:0,
+      list:[
+        {
+          to:'张三',
+          time:'2018-09-10 00:00',
+          content:'快点把车挪走，我要出去'
+        }
+      ]
   },
 
   /**
@@ -63,16 +79,10 @@ Page({
   onShareAppMessage: function () {
 
   },
-  //点击登录时间
-  login:function(){
-    wx.switchTab({
-      url: '../index/index',
-    })
-  },
-  //点击注册
-  reg:function(e){
-    wx.reLaunch({
-      url: e.currentTarget.dataset.page,
+  //点击tab切换
+  tabToggle:function(e){
+    this.setData({
+      tabSelect:e.currentTarget.dataset.index
     })
   }
 })

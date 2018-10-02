@@ -1,0 +1,70 @@
+<view class="meLi">
+    <image class='head' src='/images/ewm.jpeg' bindtap='chengeHead'></image>
+    <view>我的名字</view>
+</view>
+<view class="meLi more" data-page="./order/order" bindtap='opennewPage'>
+    <view>我的订单</view>
+    <view></view>
+</view>
+<view class="meLi">
+    <view>VIP会员</view>
+    <view>2019-10-10到期</view>
+</view>
+<view class="meLi">
+    <view>手机号码</view>
+    <view>13888888888</view>
+</view>
+<view class="meLi more" data-page="./cardList/cardList" bindtap='opennewPage'>
+    <view>车牌号码</view>
+    <view></view>
+</view>
+<view class="meLi">
+    <view>通知方式</view>
+    <view>VIP专属通道</view>
+</view>
+<view class="meLi more" data-page="./message/message" bindtap='opennewPage'>
+    <view>挪车留言</view>
+    <view></view>
+</view>
+<view class="meLi more">
+    <view>联系客服</view>
+    <view></view>
+</view>
+<view class="meLi more">
+    <view>退出登录</view>
+    <view></view>
+</view>
+<view class='intrduce' data-mask="true" bindtap='intrduce'>用户必读《挪车器使用说明书》</view>
+<view class='mask' wx:if="{{mask}}"  bindtap='intrduce'>
+  <view class='maskMain'>
+      <view class='maskTitle'>用户必读</view>
+      <view class='maskTitle2'>wode小程序使用说明书</view>
+      <view class='maskLi'>
+        <view class='liNum'>1.如何快速登录?</view>
+        <view class='maskLiCon'>
+          填写本机真实号码注册我的小程序账号，获取验证码后点击确定即可进入个人管理页面，并正确完善自己您的车辆信息
+        </view>
+      </view>
+      <view class='maskLi'>
+        <view class='liNum'>2.扫码挪车流程?</view>
+        <view class='maskLiCon'>
+          <text>新用户</text>扫描车辆粘贴的挪车贴时系统会跳出提示绑定本机使用的电话号码，获取验证码点击提交即可联系车主
+        </view>
+        <view class='maskLiCon'>
+          <text>已注册</text>过我的小程序账号的用户，扫描车辆粘贴的挪车码时直接点击“联系车主挪车”即可隐私通话
+        </view>
+      </view>
+      <view class='maskLi'>
+        <view class='liNum'>3.如何更换手机号码?</view>
+        <view class='maskLiCon'>
+            目前暂不支持修改手机号码，建议使用新的手机号码重新快速登录来注册新账号，并重新完善车辆信息和绑定新的挪车码贴
+        </view>
+      </view>
+      <view class='maskLi'>
+        <view class='liNum'>4.小程序账号和手机号码(重要须知)！</view>
+        <view class='maskLiCon'>
+          我的小程序注册账号使用的手机号码和拨打电话的手机号码必须一致。例：本机手机号码186****0313 当使用微信扫一扫或小程序主页扫码时，该小程序注册账号需和本机186****0313一致。否则无法连接对方车主电话。
+        </view>
+      </view>
+  </view>
+</view>

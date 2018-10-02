@@ -1,0 +1,77 @@
+/* pages/me/me.wxss */
+page{
+  background: #f5f5f5;
+}
+.meLi{
+  background: #fff;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:40rpx 40rpx;
+  font-size: 30rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+.meLi.more::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 1rpx solid #ccc;
+  border-right: 1rpx solid #ccc;
+  transform: rotate(45deg);
+}
+.head{
+  width: 200rpx;
+  height: 200rpx;
+}
+.intrduce{
+  padding-left: 40rpx;
+  line-height: 60rpx;
+  text-decoration: underline;
+  color: #999;
+  font-size: 30rpx;
+  letter-spacing: 4rpx;
+  margin-bottom: 30rpx;
+}
+.mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maskMain{
+  width: 80%;
+  background:#44D242; 
+  font-size: 26rpx;
+  padding: 20rpx;
+}
+.maskTitle,.maskTitle2{
+  color: #fff;
+  text-align: center;
+  font-size: 34rpx;
+}
+.maskTitle2{
+  font-size: 32rpx
+}
+.liNum{
+  font-weight: bold;
+}
+.maskLi{
+  line-height: 36rpx;
+  margin: 10rpx 0;
+}
+.maskLiCon text{
+  color: #F06B5C;
+}

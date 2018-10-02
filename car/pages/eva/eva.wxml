@@ -1,0 +1,16 @@
+<!--pages/eva/eva.wxml-->
+<view class='tabBox'>
+  <view  wx:for="{{tabList}}" wx:key="tab" class='tab-item {{item.index==tabSelect?"active":""}}' data-index="{{index}}"  bindtap='tabToggle'>{{item.name}}</view>
+</view>
+
+<view class='listBox'>
+  <view class='li-item' wx:for="{{list}}" wx:key="to">
+      <view class='li-item-to'>
+        <view wx:if="{{tabSelect==0}}">To:{{item.to}}</view>
+        <view wx:else>From:{{item.to}}</view>
+        <view class='li-item-time'>{{item.time}}</view>
+      </view>
+      <view class='li-item-content'>{{item.content}}</view>
+  </view>
+  <view class='li-nothing' wx:if="{{list.length==0}}">暂无更多信息...</view>
+</view>

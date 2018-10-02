@@ -1,0 +1,3 @@
+<!--pages/me/message/message.wxml-->
+ <textarea placeholder='请输入您的挪车留言'></textarea>
+ <button>保存</button>

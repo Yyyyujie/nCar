@@ -1,0 +1,7 @@
+<view class="orderBox">
+    <view class='orderLi' wx:for="{{List}}">
+        <view>订单时间：{{item.time}}</view>
+        <view>订单留言：{{item.contain}}</view>
+    </view>
+    <view class='isNothing' wx:if="{{List.length==0}}">暂无订单...</view>
+</view>
