@@ -1,0 +1,14 @@
+<!--pages/ewm/addOrder/addOrder.wxml-->
+<view>
+    订单内容：车主码挪车静电贴
+</view>
+<view>收货地址：<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker></view>
+  <input placeholder='请输入您的详细地址' data-type="address" bindinput='mesage'></input>
+  <input placeholder='请输入收货人姓名' data-type="name" bindinput='mesage'></input>
+  <input placeholder='请输入收货人联系方式' data-type="phone" bindinput='mesage'></input>
+  <input placeholder='请输入邮编' data-type="emailCode" bindinput='mesage'></input>
+  <button bindtap='add'>确定</button>

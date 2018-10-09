@@ -2,13 +2,13 @@
 <view class="login_banner"></view>
 
 <view class='loginForm'>
-    <input placeholder='手机号码' type='number'></input>
+    <input placeholder='手机号码' type='number' data-type="phone" bindinput='phone'></input>
     <view class='code'>
-      <input placeholder='验证码'></input>
-      <button class='sendCode'>获取验证码</button>
+      <input placeholder='验证码' data-type="code" bindinput='phone'></input>
+      <button class='sendCode'  disabled="{{btnStatus}}"  bindtap='sendCode'>{{send}}</button>
     </view>
-    <input placeholder='密码' password='password'></input>
-    <input placeholder='确认密码密码' password='password'></input>
+    <input placeholder='密码' password='password' data-type="password" bindinput='phone'></input>
+    <input placeholder='确认密码密码' password='password' data-type="againPass" bindinput='phone'></input>
 </view>
 <view class='loginBtn_Group'>
   <button class='loginBtn' bindtap='login'>注册</button>

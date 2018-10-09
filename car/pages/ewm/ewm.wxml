@@ -5,5 +5,5 @@
     <view class='ewm2'>微信扫码挪车</view>
     <view class='ewm3'>[我的小程序]小程序 微信扫码联系车主 保护隐私</view>
 </view>
-<button class='buy'>购买专属挪车码贴</button>
+<button class='buy' bindtap='buy'>购买专属挪车码贴</button>
 <button class='share'>分享我的挪车码</button>

@@ -9,7 +9,9 @@
     "pages/me/cardList/cardList",
     "pages/me/message/message",
     "pages/reg/reg",
-    "pages/forget/forget"
+    "pages/forget/forget",
+    "pages/ewm/buy/buy",
+    "pages/ewm/addOrder/addOrder"
   ],
   "window": {
     "backgroundTextStyle": "light",

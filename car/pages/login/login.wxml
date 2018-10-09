@@ -1,7 +1,7 @@
 <view class="login_banner"></view>
 <view class='loginForm'>
-    <input placeholder='手机号码' type='number'></input>
-    <input placeholder='密码' password='password'></input>
+    <input placeholder='手机号码' type='number' data-type="loginName" bindinput='phone'></input>
+    <input placeholder='密码' password='password' data-type="password" bindinput='phone'></input>
 </view>
 <view class='loginBtn_Group'>
   <button class='loginBtn' bindtap='login'>登录</button>

@@ -1,0 +1,2 @@
+<!--pages/ewm/buy/buy.wxml-->
+<button bindtap='addOrder'>立即购买</button>

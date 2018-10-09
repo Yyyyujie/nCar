@@ -1,4 +1,4 @@
-// pages/ewm/ewm.js
+// pages/ewm/buy/buy.js
 Page({
 
   /**
@@ -63,10 +63,10 @@ Page({
   onShareAppMessage: function () {
 
   },
-  //购买码贴
-  buy:function(){
+  //生成订单
+  addOrder:function(){
     wx.navigateTo({
-      url: './buy/buy',
+      url: './addOrder/addOrder',
     })
   }
 })

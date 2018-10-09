@@ -1,6 +1,10 @@
 page{
   background: #F5F5F5;
 }
+#map{
+  width: 100%;
+  height: 350rpx;
+}
 .ewm{
   width: 100%;
   padding: 100rpx 0 60rpx;
